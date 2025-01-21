@@ -3,24 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
+    <header>
+        <h1>My Recipes</h1>
+        <p>My recipe collection</p>
+        <button class="nav-toggle" id="nav-toggle">☰</button>
+    </header>
 
-    <h2>Recipes</h2>
-    <ul>
-        <li><button onclick="location.href='recipes/ramen.html'">Ramen Recipe</button></li>
-        <li><button onclick="location.href='recipes/dumplings.html'">Dumplings Recipe</button></li>
-        <li><button onclick="location.href='recipes/curry.html'">Curry Recipe</button></li>
-        <li><button onclick="location.href='recipes/friedRice.html'">Fried Rice Recipe</button></li>
-    </ul>
-    
-    <img src="./recipes/images/fried rice.jpg" alt="Fried Rice">
-    <img src="./recipes/images/curry.jpg" alt="curry">
-    <img src="./recipes/images/dumplings.jpg" alt="Dumplings">
-    <img src="./recipes/images/ramen.jpg" alt="Ramen">
-    
+    <div class="nav-container">
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h2>Explore Recipes</h2>
+        <div class="recipe-grid">
+            <section class="recipe-card">
+                <img src="recipes/images/ramen.jpg" alt="Ramen">
+                <h2>Ramen Recipe</h2>
+                <button onclick="location.href='recipes/ramen.html'">View Recipe</button>
+            </section>
+            
+            <section class="recipe-card">
+                <img src="recipes/images/dumplings.jpg" alt="Dumplings">
+                <h2>Dumplings Recipe</h2>
+                <button onclick="location.href='recipes/dumplings.html'">View Recipe</button>
+            </section>
+            
+            <section class="recipe-card">
+                <img src="recipes/images/curry.jpg" alt="Curry">
+                <h2>Curry Recipe</h2>
+                <button onclick="location.href='recipes/curry.html'">View Recipe</button>
+            </section>
+            
+            <section class="recipe-card">
+                <img src="recipes/images/fried rice.jpg" alt="Fried Rice">
+                <h2>Fried Rice Recipe</h2>
+                <button onclick="location.href='recipes/friedRice.html'">View Recipe</button>
+            </section>
+        </div>
+    </main>
+    <script src="navigation.js"></script>
 </body>
 </html>
